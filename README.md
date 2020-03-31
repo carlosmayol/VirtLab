@@ -1,3 +1,3 @@
-# WS Material
-Scripts
+# WS NOtes
 
+Info on the Custom WS
