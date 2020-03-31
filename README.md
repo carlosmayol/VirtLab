@@ -9,6 +9,14 @@ Info on the Custom WS:
 
 Links:
 
+AzureStack HCI
 <https://docs.microsoft.com/en-us/azure-stack/hci/overview?view=azs-2002>
-
 <https://www.microsoft.com/en-us/cloud-platform/azure-stack-hci-catalog>
+HV
+<https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/what-s-new-in-hyper-v-on-windows>
+Cluster
+<https://docs.microsoft.com/en-us/windows-server/failover-clustering/whats-new-in-failover-clustering>
+S2D
+<https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/storage-spaces-direct-overview>
+VMM
+<https://docs.microsoft.com/en-us/system-center/vmm/overview?view=sc-vmm-2019>
