@@ -16,15 +16,15 @@ Set-VMFirmware -VMName YOURVMNAME -FirstBootDevice $hd -WhatIf
 	
 Security settings
 Display Secure Boot settings:
-Get-VMFirmware -VMName lab6_ws2016_01 | Format-List sec*
+Get-VMFirmware -VMName YOURVMNAME | Format-List sec*
 
 Example to enable Secure Boot:
-Set-VMFirmware -VMName lab6_ws2016_01 -EnableSecureBoot On  
+Set-VMFirmware -VMName YOURVMNAME -EnableSecureBoot On  
 
 Example to enable vTPM[*]:
-Get-VMSecurity -VMName lab6_ws2016_01 
+Get-VMSecurity -VMName YOURVMNAME 
 
-Enable-VMTPM -VMName lab6_ws2016_01 
+Enable-VMTPM -VMName YOURVMNAME 
 
 [*] enabling vTPM might need add protector if you use PowerShell as in following example
 $guardian = Get-HgsGuardian | Select-Object -first 1
@@ -40,20 +40,20 @@ Memory settings:
 Virtual Machine has Network Virtualization Extensions exposed (Nested Virtualization is on), therefore Dynamic Memory settings are not effective on VMs, where Hyper-V is enabled.
 PowerShell examples:
 Example to display all memory parameters:
-Get-VMMemory -VMName lab6_ws2016_01 | fl *
+Get-VMMemory -VMName YOURVMNAME | fl *
 
 To modify startup memory you can use following command:
-Set-VMMemory -VMName lab6_ws2016_01 -StartupBytes 2GB 
+Set-VMMemory -VMName YOURVMNAME -StartupBytes 2GB 
 
 Processor settings:
 Navigate to Processor and review the settings.
 Notice also Compatibility settings and NUMA node settings.
 PowerShell examples:
 To view processor settings, you can use following command:
-Get-VMProcessor -VMName lab6_ws2016_01 | fl *
+Get-VMProcessor -VMName YOURVMNAME | fl *
 
 For example to set nested virtualization, you can use following command:
-Set-VMProcessor -VMName lab6_ws2016_01 -ExposeVirtualizationExtensions $true 
+Set-VMProcessor -VMName YOURVMNAME -ExposeVirtualizationExtensions $true 
 
 -------------------------------------------------------------------------------
 
