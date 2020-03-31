@@ -55,4 +55,7 @@ Get-VMProcessor -VMName lab6_ws2016_01 | fl *
 For example to set nested virtualization, you can use following command:
 Set-VMProcessor -VMName lab6_ws2016_01 -ExposeVirtualizationExtensions $true 
 
+-------------------------------------------------------------------------------
+
+
 
