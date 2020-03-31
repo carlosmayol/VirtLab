@@ -9,6 +9,6 @@ Info on the Custom WS:
 
 Links:
 
-https://docs.microsoft.com/en-us/azure-stack/hci/overview?view=azs-2002
+<https://docs.microsoft.com/en-us/azure-stack/hci/overview?view=azs-2002>
 
-https://www.microsoft.com/en-us/cloud-platform/azure-stack-hci-catalog
+<https://www.microsoft.com/en-us/cloud-platform/azure-stack-hci-catalog>

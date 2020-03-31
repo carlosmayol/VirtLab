@@ -9,10 +9,10 @@ HW Additions:
 Get-command Add-VM*
 
 Boot Order / UEFI Gen2 VM:
-(Get-VMFirmware -VMName VM ).BootOrder
+(Get-VMFirmware -VMName YOURVMNAME).BootOrder
 
 $hd = Get-VMHardDiskDrive -VMName *2016*
-Set-VMFirmware -VMName LAB6_WS2016_01 -FirstBootDevice $hd -WhatIf
+Set-VMFirmware -VMName YOURVMNAME -FirstBootDevice $hd -WhatIf
 	
 Security settings
 Display Secure Boot settings:
