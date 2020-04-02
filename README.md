@@ -33,6 +33,10 @@ VMM
 
 <https://docs.microsoft.com/en-us/system-center/vmm/overview?view=sc-vmm-2019>
 
+VMM Builds
+
+<https://social.technet.microsoft.com/wiki/contents/articles/15361.system-center-virtual-machine-manager-list-of-build-numbers.aspx>
+
 Storage spaces concepts
 
 <https://social.technet.microsoft.com/wiki/contents/articles/15200.storage-spaces-designing-for-performance.aspx>
