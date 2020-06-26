@@ -53,9 +53,6 @@ To view processor settings, you can use following command:
 Get-VMProcessor -VMName YOURVMNAME | fl *
 
 For example to set nested virtualization, you can use following command:
-Set-VMProcessor -VMName YOURVMNAME -ExposeVirtualizationExtensions $true 
+Set-VMProcessor -VMName YOURVMNAME -ExposeVirtualizationExtensions $true
 
--------------------------------------------------------------------------------
-
-
-
+-------------------------------------------------------------------------
