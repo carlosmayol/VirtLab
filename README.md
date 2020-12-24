@@ -7,7 +7,7 @@ Info on the Custom WS:
 
 -> Challenge / Auto-discovery / Additonal HOL
 
--> Github.com/carlosmayol/jpmc
+-> Github.com/carlosmayol/virtlab
 
 Links:
 
