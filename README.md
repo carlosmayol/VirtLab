@@ -12,8 +12,8 @@ Info on the Custom WS:
 Links:
 
 AzureStack HCI
-
 <https://docs.microsoft.com/en-us/azure-stack/hci/overview?view=azs-2002>
+
 <https://www.microsoft.com/en-us/cloud-platform/azure-stack-hci-catalog>
 
 HV
