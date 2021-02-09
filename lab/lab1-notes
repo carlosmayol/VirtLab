@@ -1,4 +1,4 @@
-VM CREATION
+VM CREATION (from LAB 4 SVM-MasterHost)
 Invoke-WebRequest -UseBasicParsing -Uri https://raw.githubusercontent.com/microsoft/WSLab/master/Tools/Convert-WindowsImage.ps1 -OutFile .\Convert-WindowsImage.ps1
 import-module .\convert-windowsimage.ps1
 Convert-WindowsImage -SourcePath "d:\sources\install.wim" -VHDFormat "VHDX" -Edition "Windows Server 2019 Standard" -SizeBytes 50GB -DiskLayout "UEFI" -VHDPath ".\WSCore2019.vhdx"
@@ -55,4 +55,36 @@ Get-VMProcessor -VMName YOURVMNAME | fl *
 For example to set nested virtualization, you can use following command:
 Set-VMProcessor -VMName YOURVMNAME -ExposeVirtualizationExtensions $true
 
--------------------------------------------------------------------------
+Cluster Exploration (From LAB 6 after S2D cluster is created)
+
+Open Failover Cluster Manager and connect the cluster
+
+cluadmin.msc from Start menu.
+
+Display core resources owner
+Get-ClusterGroup -name "Cluster Group"
+
+Explore recent cluster events
+
+To grab recent cluster events you can run following PowerShell command. In Level notice levels 1,2,3 (Critical,Error,Warning)
+
+Display cluster events
+Get-WinEvent -FilterHashtable @{ LogName="*FailoverClustering*";Level=1,2,3 } #Kind if useless, too much noise
+Get-WinEvent -FilterHashtable @{LogName="SYSTEM";ProviderName="Microsoft-Windows-FailoverClustering";Level=1,2,3}
+
+Display witness configuration
+Get-ClusterQuorum
+
+Display cluster networks
+Get-ClusterNetwork 
+Get-ClusterNetwork | ft Name, Role, Address 
+
+Display cluster core resources
+Get-ClusterGroup -Name "Cluster Group" | Get-ClusterResource 
+
+Display cluster resource dependencies
+Display resource dependencies
+Get-ClusterResource | Get-ClusterResourceDependency 
+
+Display resource parameters
+Get-ClusterResource -Cluster FirstCluster | Get-ClusterParameter
