@@ -1,0 +1,10 @@
+VMM from LAB 4 (SVM-MasterHost)
+
+Download Evaluation VHD from here: <https://www.microsoft.com/en-us/download/details.aspx?id=58058>
+Un-compress and create the VMM VM (Gen1) - Follow DOCX file (8GB RAM, 4vCPU), use D:\VMs for all the VMs operations
+Rename WS2019_BASE as GuardedHOST2 , then start, configure IP/DNS and join to the domain contoso.com
+Configure New VM with the same settings as GuardedHOST 1 (vCPU, Networks, etc)
+Configure GuardedHOST1 and GuardedHOST2 with 4GB of RAM each, Configure
+Configure DisK files under D:\VMs\"VMNAME" for each VM. VHDX must have the same VMNAME.
+Use VMM to on-board both GuardedHOSTs VMs
+Use VMM to create a Logical Switch, VM Network and Logical Switch Deploy the LS to GuardedHOSTs
