@@ -1,5 +1,5 @@
 VM CREATION (from LAB 4 SVM-MasterHost)
-Invoke-WebRequest -UseBasicParsing -Uri https://raw.githubusercontent.com/microsoft/WSLab/master/Tools/Convert-WindowsImage.ps1 -OutFile .\Convert-WindowsImage.ps1
+Invoke-WebRequest -UseBasicParsing -Uri https://raw.githubusercontent.com/MicrosoftDocs/Virtualization-Documentation/live/hyperv-tools/Convert-WindowsImage/Convert-WindowsImage.ps1 -OutFile .\Convert-WindowsImage.ps1
 import-module .\convert-windowsimage.ps1
 Convert-WindowsImage -SourcePath "d:\sources\install.wim" -VHDFormat "VHDX" -Edition "Windows Server 2019 Standard" -SizeBytes 50GB -DiskLayout "UEFI" -VHDPath ".\WSCore2019.vhdx"
 
