@@ -3,6 +3,7 @@ Invoke-WebRequest -UseBasicParsing -Uri https://raw.githubusercontent.com/Micros
 import-module .\convert-windowsimage.ps1
 Convert-WindowsImage -SourcePath "d:\sources\install.wim" -VHDFormat "VHDX" -Edition "Windows Server 2019 Standard" -SizeBytes 50GB -DiskLayout "UEFI" -VHDPath ".\WSCore2019.vhdx"
 
+#Create a VM using the new VHDX file you just created.
 
 HyperV VM Exploration:
 HW Additions:
