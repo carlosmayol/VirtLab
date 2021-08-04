@@ -3,7 +3,7 @@
 Info on the Custom WS:
 -> Use the attached Student files and addicional presentation shared in the Learn on Demand workspace.
 
--> LAB 4 / 6 -> Guided LABs
+-> LAB 4 / 7 -> Guided LABs
 
 -> Challenge / Auto-discovery / Additonal HOL
 
