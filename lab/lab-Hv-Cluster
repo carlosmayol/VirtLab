@@ -56,7 +56,7 @@ Get-VMProcessor -VMName YOURVMNAME | fl *
 For example to set nested virtualization, you can use following command:
 Set-VMProcessor -VMName YOURVMNAME -ExposeVirtualizationExtensions $true
 
-Cluster Exploration (From LAB 6 after S2D cluster is created)
+Cluster Exploration (From LAB 7 after S2D cluster is created)
 
 Open Failover Cluster Manager and connect the cluster
 
@@ -70,7 +70,7 @@ Explore recent cluster events
 To grab recent cluster events you can run following PowerShell command. In Level notice levels 1,2,3 (Critical,Error,Warning)
 
 Display cluster events
-Get-WinEvent -FilterHashtable @{ LogName="*FailoverClustering*";Level=1,2,3 } #Kind if useless, too much noise
+Get-WinEvent -FilterHashtable @{ LogName="*FailoverClustering*";Level=1,2,3 } lot of noise
 Get-WinEvent -FilterHashtable @{LogName="SYSTEM";ProviderName="Microsoft-Windows-FailoverClustering";Level=1,2,3}
 
 Display witness configuration
