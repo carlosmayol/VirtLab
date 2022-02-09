@@ -7,5 +7,5 @@ Configure New VM with the same settings as GuardedHOST 1 (vCPU, Networks, etc)
 Configure GuardedHOST1 and GuardedHOST2 with 4GB of RAM each, Configure
 Configure DisK files under D:\VMs\"VMNAME" for each VM. VHDX must have the same VMNAME.
 Use VMM to on-board both GuardedHOSTs VMs
-Update VMM to UR2, then Update the HOST VMM Agent
+Update VMM to UR3, then Update the HOST VMM Agent
 Use VMM to create a Logical Switch, VM Network and Logical Switch Deploy the LS to GuardedHOSTs
