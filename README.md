@@ -3,11 +3,21 @@
 Info on the Custom WS:
 -> Use the attached Student files and addicional presentation shared in the Learn on Demand workspace.
 
--> LAB 4 / 7 -> Guided LABs
+LABs
+#######
 
--> Challenge / Auto-discovery / Additonal HOL
+Topics: HyperV-Cluster
+1 -> LAB 4 | Custom : HyperV Basics -> https://github.com/carlosmayol/VirtLab/blob/master/lab/lab-Hv-Cluster
+2 -> LAB 7 | Custom:  CLuster Basics -> https://github.com/carlosmayol/VirtLab/blob/master/lab/lab-Hv-Cluster
+Topcis: HV/Cluter/ VMs Operations & Storage (CSV concepts)
+3 -> LAB 7 | Guided (VMs, Storage CSV, Operations)
+Topics: Security
+4 -> LAB 2 & 3 Guided
+5 -> LAB 4 Guided (optional for Shilded VMs)
+Topics: VMM
+6 -> LAB 4 | Custom : VMM Lab -> https://github.com/carlosmayol/VirtLab/blob/master/lab/lab-vmm
 
--> Github.com/carlosmayol/virtlab
+
 
 Links:
 
