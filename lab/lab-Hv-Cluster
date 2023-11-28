@@ -1,9 +1,9 @@
-VM CREATION (from LAB 4 SVM-MasterHost)
+# VM CREATION (from LAB 4 SVM-MasterHost)
 Invoke-WebRequest -UseBasicParsing -Uri https://raw.githubusercontent.com/MicrosoftDocs/Virtualization-Documentation/live/hyperv-tools/Convert-WindowsImage/Convert-WindowsImage.ps1 -OutFile .\Convert-WindowsImage.ps1
 import-module .\convert-windowsimage.ps1
 Convert-WindowsImage -SourcePath "e:\sources\install.wim" -VHDFormat "VHDX" -Edition "Windows Server 2019 Standard" -SizeBytes 50GB -DiskLayout "UEFI" -VHDPath ".\WSCore2019.vhdx"
 
-#Create a VM using the new VHDX file you just created.
+# Create a VM using the new VHDX file you just created.
 
 HyperV VM Exploration:
 HW Additions:
@@ -27,13 +27,13 @@ Get-VMSecurity -VMName YOURVMNAME
 
 Enable-VMTPM -VMName YOURVMNAME 
 
-[*] enabling vTPM might need add protector if you use PowerShell as in following example
+# [*] enabling vTPM might need add protector if you use PowerShell as in following example
 $guardian = Get-HgsGuardian | Select-Object -first 1
 if($guardian -eq $null) {
   $guardian = New-HgsGuardian -Name MyGuardian -GenerateCertificates
 }
 $keyprotector = New-HgsKeyProtector -Owner $guardian -AllowUntrustedRoot
-Set-VMKeyProtector -VMName <yourVMName> -KeyProtector $keyprotector.RawData
+Set-VMKeyProtector -VMName YOURVMNAME -KeyProtector $keyprotector.RawData
 Memory settings
 
 
